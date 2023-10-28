@@ -17,6 +17,7 @@
     "dev": "concurrently \"mongod\" \"ng serve --open\" \"tsc -w -p server\" \"nodemon dist/server/app.js\"",
     "prod": "concurrently \"mongod\" \"ng build && tsc -p server && node dist/server/app.js\"",
     "test": "ng test",
+    "test:watch":"sudo /home/fares/.nvm/versions/node/v20.9.0/bin/npx jest --watch",
     "testbe": "tsc -p server && jest",
     "testbecov": "tsc -p server && jest --coverage",
     "lint": "ng lint && htmlhint \"client/**/*.html\" && sass-lint \"client/**/*.scss\" -v",
